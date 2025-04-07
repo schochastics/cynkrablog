@@ -1,0 +1,20 @@
+---
+title: "Cynkrablog Example"
+filters:
+  - cynkrablog
+format:
+  gfm:
+    variant: gfm+yaml_metadata_block
+---
+
+## Heading
+
+This extension produces correct alt tags for images in gfm format for the cynkra blog
+
+![](surus.png){fig-alt='A placeholder image'}
+
+```{r}
+#| label: test
+#| fig-alt: testing
+plot(1:10)
+```
