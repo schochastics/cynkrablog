@@ -1,6 +1,6 @@
 # Cynkrablog Extension For Quarto
 
-_TODO_: Add a short description of your extension.
+An Extension that helps to comply with the style guide of the cynkra blog.
 
 ## Installing
 
@@ -15,7 +15,28 @@ If you're using version control, you will want to check in this directory.
 
 ## Using
 
-_TODO_: Describe how to use your extension.
+It implements the following: 
+
+- the alt text is properly set in images
+- headers are adjusted so that the max header is a level 2 (##) header
+- inject `class="tw:lg:w-[70%]" loading="lazy"` if an image has a width attribute
+
+Not included but helpful tips:
+
+To make code foldable, put this in front of the code chunk in the `qmd` file:
+```
+::::{.cynkra-collapsible-block}
+::::
+
+```
+
+This should give
+
+```
+<div class="cynkra-collapsible-block"></div>
+```
+
+in the `md` output.
 
 ## Example
 
