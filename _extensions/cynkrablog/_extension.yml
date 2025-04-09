@@ -3,7 +3,13 @@ author: schochastics
 version: 1.0.0
 quarto-required: ">=1.6.0"
 contributes:
-  filters:
-    - fig-alt.lua
-    - headers.lua
-    - inject-img-class.lua
+  formats: 
+    gfm:
+      variant: gfm+yaml_metadata_block
+      filters:
+          - lead-div-to-p.lua
+          - fig-alt.lua
+          - headers.lua
+          - inject-img-class.lua
+      shortcodes:
+        - code-fold.lua
