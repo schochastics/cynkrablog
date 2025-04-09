@@ -1,44 +1,25 @@
 # Cynkrablog Extension For Quarto
 
-An Extension that helps to comply with the style guide of the cynkra blog.
+An Extension that helps to write a blog post that complies with the style guide of the [cynkra blog](https://cynkra.com/blog).
 
 ## Installing
 
-_TODO_: Replace the `<github-organization>` with your GitHub organization.
+_TODO_: move to cynkra Github org
 
 ```bash
-quarto add <github-organization>/cynkrablog
+quarto use template schochastics/cynkrablog
 ```
 
-This will install the extension under the `_extensions` subdirectory.
-If you're using version control, you will want to check in this directory.
+This will install the extension and create an example qmd file that you can use as a starting place for your post.
 
 ## Using
 
+The template is quite opinionated and does not allow much degrees of freedom to make the posts look and behave consistently
+
 It implements the following: 
 
-- the alt text is properly set in images
-- headers are adjusted so that the max header is a level 2 (##) header
-- inject `class="tw:lg:w-[70%]" loading="lazy"` if an image has a width attribute
-
-Not included but helpful tips:
-
-To make code foldable, put this in front of the code chunk in the `qmd` file:
-```
-::::{.cynkra-collapsible-block}
-::::
-
-```
-
-This should give
-
-```
-<div class="cynkra-collapsible-block"></div>
-```
-
-in the `md` output.
-
-## Example
-
-Here is the source code for a minimal example: [example.qmd](example.qmd).
-
+- the alt text is properly set in images via filters
+- headers are adjusted so that the max header is a level 2 (`##`) header
+- inject `class="tw:lg:w-[70%]" loading="lazy"` if an image has a width attribute (needs to be revised)
+- a shortcode `{{< code-fold >}}` that can be placed in front of code chunks to fold the code later on the blog.
+- runs `styler` on all code chunks
