@@ -12,6 +12,8 @@ quarto use template schochastics/cynkrablog
 
 This will install the extension and create an example qmd file that you can use as a starting place for your post.
 
+**Note**: This only installs the extension in the current working directory and not globally. Each blog post should always start with running the `quarto use template` command
+
 ## Using
 
 The template is quite opinionated and does not allow much degrees of freedom to make the posts look and behave consistently
