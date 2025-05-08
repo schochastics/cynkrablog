@@ -1,14 +1,12 @@
 ---
 title: Cynkrablog Example
-author:
-  - David Schoch
 authors:
-  - David Schoch
+  - name: David Schoch
+  - uid: david.schoch
 excerpt: |
   A paragraph that is the excerpt
 date: 2025-04-09T00:00:00.000Z
 og_image: og_image.jpg
-toc_title: Table of Contents
 format: cynkrablog-gfm
 ---
 

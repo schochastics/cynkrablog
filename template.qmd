@@ -1,9 +1,8 @@
 ---
 title: "Cynkrablog Example"
-author: 
-  - David Schoch
 authors:
-  - David Schoch
+  - name: David Schoch
+  - uid: david.schoch
 excerpt: |
   A paragraph that is the excerpt
 date: 2025-04-09
